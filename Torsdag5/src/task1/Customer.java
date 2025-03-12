@@ -1,3 +1,5 @@
+package task1;
+
 public class Customer {
 
     private String firstName;
@@ -22,16 +24,16 @@ public class Customer {
         this.firstName = firstName;
     }
 
-    public String getLasttName(){
+    public String getLastName(){
         return lastName;
     }
-    public void setLasttName(String lastName){
+    public void setLastName(String lastName){
         this.lastName = lastName;
     }
 
     @Override
     public String toString(){
-        String s = "";
+        String s = "Customer ID: "+id+"\nCustomer Username: "+userName+"\nCustomer Name: "+lastName+", "+firstName+"\n";
         return s;
     }
 
