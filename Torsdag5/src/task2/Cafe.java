@@ -20,13 +20,15 @@ public class Cafe {
     public void loadMenuData(){
 
         try {
-            File file = new File("data/coffee.txt");
+            File file = new File("Torsdag5/data/coffee.txt");
             Scanner scanner = new Scanner(file);
             while (scanner.hasNextLine()){
                 coffeeMenu.add(scanner.nextLine());
             }
         } catch (FileNotFoundException e) {
-            System.out.println("File not found");
+            throw new RuntimeException("File not found",e);
+            // Rettet fra nedenstående under undervisningen med Tobias
+            // System.out.println("File not found");
         }
 
 

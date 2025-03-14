@@ -21,9 +21,10 @@ public class Room {
     }
 
     //Getters and setters for numberOfWindows
-    public int getNumberOfWindows(){
+    public int getNumberOfWindows() {
         return numberOfWindows;
     }
+
     public void setNumberOfWindows(int numberOfWindows){
         this.numberOfWindows = numberOfWindows;
     }
